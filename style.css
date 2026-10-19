@@ -3,65 +3,51 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #c5d8be;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    color: #2b2b2b;
 }
 
-.app-card {
+.main-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
-    width: 100%;
-    max-width: 360px;
-    padding: 40px 20px;
+}
+
+.site-header {
+    margin-top: 20px;
 }
 
 .logo-title {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
-    color: #2b2b2b;
-    margin-bottom: 5px;
     background: rgba(255, 255, 255, 0.4);
     padding: 10px 20px;
     border-radius: 20px;
     display: inline-block;
+    margin-bottom: 0;
 }
 
 .subtitle {
     font-style: italic;
     color: #333;
     margin-top: 5px;
-    margin-bottom: 60px;
-}
-
-.btn-login {
-    background: rgba(255, 255, 255, 0.6);
-    border: none;
-    padding: 15px 40px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #2b2b2b;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    width: 80%;
-}
-a.btn-login {
-    display: inline-block;
-    text-decoration: none;
-    box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .user-avatar {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    margin: 0 auto 30px auto;
+    font-size: 24px;
+    margin: 0 auto 20px auto;
+}
+
+.menu-section {
+    margin-bottom: 40px;
 }
 
 .menu-btn {
@@ -74,11 +60,46 @@ a.btn-login {
     border-radius: 20px;
     font-weight: bold;
     font-size: 16px;
-    text-align: center;
     transition: 0.2s;
 }
 
-.btn-back {
-    background: rgba(200, 220, 200, 0.7);
-    margin-top: 25px;
+.menu-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.products-section {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.product-card {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.product-img {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.product-name {
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
 }
